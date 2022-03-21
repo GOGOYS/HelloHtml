@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form 연습</title>
+<style>
+
+	caption{
+		font-size:2em
+	}
+		
+	table{
+	border-collapse: collapse;
+		width:430px;
+	}
+	
+	th, td{
+		border: 1px solid black;
+	}
+	
+	th{ width:120px;
+		padding: 10px;
+	}
+	td{
+		padding: 0 0 0 10px;
+	}
+	
+	.size{
+		width:250px;
+	}
+	
+	.minimum{
+		width:90px;
+	}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+
+
+<div id='wrap'>
+<form action='' autocomplete='off' method='post' enctype='multipart/form-data' >
+
+<table>
+	<caption>회원가입 정보</caption>
+	<thead>
+		<tr>
+			<th>아이디</th>
+			<td><input type='text'  name='id' placeholder='아이디를 입력해주세요' required class='size'></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>비밀번호</th>
+			<td><input type='password'  name='password' placeholder='비밀번호를 입력해주세요' required class='size'></td>
+		</tr>
+		<tr>
+			<th>비밀번호 확인</th>
+			<td><input type='password' name='passwordcheck' placeholder='비밀번호를 확인해주세요' required class='size'></td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td><input type='text'  name='user_name' placeholder='이름을 입력해주세요'class='size' required></td>
+		</tr>
+		<tr>
+			<th>성별</th>
+			<td>
+				<label><input type='radio' name="gender" value='남자' checked>남</label>
+				<label><input type='radio' name="gender" value='남자'>여</label>
+			</td>
+		</tr>
+		<tr>
+			<th>전화번호</th>
+			<td>
+				<div>
+					<select name='companion'>
+						<option>02</option>
+						<option>062</option>
+						<option>052</option>
+						<option>042</option>
+					</select>
+				
+					<input type='text' name='front-number'class='minimum' required>
+					<input type='text' name='backand_number' class='minimum' required>
+					_
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th>SNS 수신여부</th>
+			<td><label><input type='checkbox' name='sns' value='수신함'>수신함</label></td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td><input type='text' name='email' style='width:135px' required> @ 
+			<select name="companion">
+				<option>직접입력</option>
+				<option>naver.com</option>
+				<option>gamil.com</option>
+				<option>daum.com</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<th>사진등록</th>
+			<td><input type='file' name='filename'></td>
+		</tr>
+		<tr>
+			<td colspan='2' style='padding: 10px 0; text-align:center'><div><input type='submit' name='submit' value='회원가입'></div></td>
+		
+		</tr>
+	</tbody>
+</table>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

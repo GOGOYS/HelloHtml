@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>비디오 파일 실습</title>
+</head>
+<body>
+	<h2>비디오 파일</h2>
+	<video width="50%" 
+		src="../video/walk2.mp4"
+		poster='../images/no.png'
+		autoplay muted
+		controls></video>
+		<!--  autoplay muted를 하면 영상이 소리없이 자동으로 재생된다(둘다 같이 써야함) -->
+		<!--  controls 속성으로 재생바를 만들 수 있다 -->
+		<!--  poster 속성으로 실제 비디오파일이 존재하지 않을때 대체해서 보여질 이미지를 지정-->
+		
+	<video width='80%' controls autoplay muted loop>
+		<source src="../video/walk.mp4">
+		<track kind='subtitles' src='../video/walk.vtt.vtt'
+		srclang='ko' default>
+		<!--  자막을 입힐려면 이렇게 따로 가져와서 링크를 달아야 자막이 입혀진당. -->
+		
+		
+		
+			
+	</video>
+</body>
+</html>

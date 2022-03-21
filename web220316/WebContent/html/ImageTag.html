@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 태그 실습</title>
+<style>
+	a{
+		text-decoration:none;
+		color: initial; /* 또는 inherit; 으로 클릭해도 색상이 안바뀌게 */
+	}
+	
+	/*  링크가 걸리면 텍스트밑에 줄이 생기는데 text-decoration: none을 써서 줄을 없앤다 */
+</style>
+</head>
+<body>
+	<h2 id='no1'>이미지 태그</h2>
+	<p>img태그: 이미지 태그 폴더내의 이미지표현, 웹상의 이미지표현</p>
+
+	<!--  현재페이지와 동일한 위치의 파일을 찾아가는 경우-->
+	<!--   <img src='./image.jpg'>-->
+	<!--   <img src='image.jpg'>-->
+
+	<!--  현제 페이지가 있는 폴더가 아닌 폴더에 있는 이미지 파일을 찾아가는 경우 -->
+	<!--  . : 현재 위치 , .. : 상위 폴더로 나간 위치-->
+	<img src='../images/cat01.jpg' width="300px">
+	<img src='../images/cat02.jpg' alt='고양이2' width="300px">
+	<img src='../images/cat01.jpg' title='냐옹' width="300px">
+	<!-- 이미지가 정상적으로 로딩이 되지 않을때 알려주는게 alt값  -->
+	<!-- 이미지가 정상적으로 표현되었을때 말풍선으로 설명을 알려주는 title값 -->
+
+	<hr>
+	<h3><a href='#no2' target='self'>웹상의 이미지표현</a></h3>
+	<img
+		src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2x09km7b35RzvH8yg_tXzVkSi_jXJnmOWA&usqp=CAU'
+		style="width: 200px">
+	<!-- 원하는 이미지 찾아서 오른클릭으로 이미지 주소 복사로 복붙하기  -->
+	
+	
+	<hr>
+	
+	<h2>링크</h2>
+	<p>
+	a태그: 링크는 현재 웹 페이지에서 다른 페이지로 연결하기 위한 형태<br>
+	a태그로 링크를 적용한다.</p>
+	
+	<h3><a href='http://naver.com'>네이버 이 브라우저에서 바로연결</a></h3>
+	<!--  href로 페이지를 링크하면 브라우저에서 바로 이동한다.(새창이 안뜸) -->
+	
+	<h3><a target='_blank' href='http://naver.com'>네이버 새 브라우저에서 연결</a></h3>
+	<!--  target='_blank' 속성을 추가하면 새로운 브라우저를 생성해서 이동한다. -->
+	<h3><a target='_self' href='http://naver.com'>네이버 이 브라우저에서 바로연결</a></h3>
+	<!--  target을 지정하지 않으면 기본값은  target='_self'-->
+	
+	
+	<p>현재페이지에서 특정위치로 연결할 수도 있는데 이런 형태를 앵커라고 한다.</p>
+	
+	<h3 id='no2'><a target='_self' href='#no1'>이미지 태그로 이동</a></h3>
+	<!-- id값을 지정해논 것을 href안에 #을 넣어 이동할 수 있당. -->
+	
+	<p><a href='#'>맨 위로!</a></p>
+	<!-- href값에 #만 넣으면 찾아갈 위치가 없어 맨 위로 간다.  -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
