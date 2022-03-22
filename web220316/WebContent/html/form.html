@@ -58,6 +58,11 @@
 	파라미터가 노출이 되는 형태, 노출이 되지 않는 형태가 있는데
 	노출되는 형태는 method: get인 방식(기본값), 노출이 되지 않는 형태는 method: post 방식</p>
 	
+	
+	<p>파일을 전송하는 경우는 반드시 지정해야 할 속성<br>
+	1. method를 post로 지정해야 한다.<br>
+	2. enctype 을 multipart/form-data를 지정해야만 한다.
+			
 	<form action='' autocomplete='off' method='post' enctype='multipart/form-data'>
 	<!--  action 속성은 텍스트를 입력하여 체줄시 페이지를 연결시켜줌-->
 	<!--  form 태그의 action 속성값이 없거나  action을 지정하지 않으면 자기자신의 페이지를 연결함-->
@@ -103,9 +108,6 @@
 		
 		<hr>
 		
-		<p>파일을 전송하는 경우는 반드시 지정해야 할 속성<br>
-		1. method를 post로 지정해야 한다.<br>
-		2. enctype 을 multipart/form-data를 지정해야만 한다.
 		
 		<div>	
 			파일선택: <input type='file' name='failname'>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input 연습</title>
+	<style>
+		h3{
+			color: blue;
+		}
+	</style>
+
+	<link rel='stylesheet' href='../css/outdoor.css'>
+</head>
+<body>
+	<a href='../index.html' style='color:inherit; text-decoration: none'>홈으로</a>
+	<input type='button' value='닫기' onclick='window.close()'>
+	<h3>추가적인 input 연습</h3>
+
+	<table>
+		<tr>
+			<th>number 태그</th>
+			<td>숫자만 입력 할 수 있는 태그</td>
+		</tr>
+		<tr>
+			<th>date 태그</th>
+			<td>날짜를 선택 할 수 있는 달력 태그</td>
+		</tr>
+		<tr>
+			<th>month 태그</th>
+			<td>월을 선택 할 수 있는 달력 태그</td>
+		</tr>
+		<tr>
+			<th>time 태그</th>
+			<td>시각을 선택 할 수 있는 시계 태그</td>
+		</tr>
+		<tr>
+			<th>button 태그</th>
+			<td>태그</td>
+		</tr>
+		<tr>
+			<th>태그</th>
+			<td>태그</td>
+		</tr>
+		<tr>
+			<th>태그</th>
+			<td>태그</td>
+		</tr>
+	</table>
+	
+	<hr>
+	
+	<div>
+		<input type='number' min='0' max='10000' value='0' step='5'>
+	</div>
+	
+	<div>
+		<input type='date' value='2022-03-22'>
+	</div>
+		
+	<div>
+		<input type='month' value='2022-03'>
+	</div>
+		
+	<div>
+		<input type='time' value='16:24'>
+	</div>
+		
+	<div>
+		<!--경고창  -->
+		<input type='button' value='네이버???' onclick='alert("응 네이버 아니야")'><br>
+		<!-- 새창 띄우기 -->
+		<input type='button' value='네이버 띄우기' onclick='window.open("https://naver.com", "_self")'><br>
+		<!--  내 파일 띄우기  -->
+		<input type='button' value='회원가입 화면열기' onclick='window.open("../index.html", "_blank")'><br>
+		
+		<!-- 팝업창 -->
+		<input type='button' value='팝업열기' onclick='window.open("http://google.com", "google", "width=500px, height=400px")'><br>
+		
+		
+		<!-- 한개 창으로 새창 만들어서 새로고침하기 -->
+		<input type='button' value='네이버 띄우기' onclick='window.open("https://naver.com", "new.window")'><br>
+		<input type='button' value='구글 띄우기' onclick='window.open("https://google.com", "new.window")'><br>
+		<input type='button' value='HRD 띄우기' onclick='window.open("https://hrd.go.kr", "new.window")'><br>
+		
+		
+	</div>	
+	
+	
+</body>
+</html>
