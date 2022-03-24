@@ -3,138 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to My Sever</title>
-<style>	
-	table{
-		border-collapse:collapse;
-	}
-	th, td{
-		border: 1px solid black; padding:5px 5px 5px 5px;
-	}
-	
-	
+<style>
+div{text-align:center;}
+a {
+	box-sizing: boeder-box;
+	text-decoration: none;
+	color: inherit;
+}
+
+ul li {
+	list-style-type: none;
+	padding: 10px;
+}
 </style>
 </head>
 <body>
-	
-	
-	
+	<div>
+		<h1>Welcome Html</h1>
+		
+		<ul>
+			<li><a href='html/webmake.html'>웹 문서 만들기 시작</a></li>
+			<li><a href='html/table.html'>식단표 테이블</a></li>
+			<li><a href='html/Image.html'>이미지 링크</a></li>
+			<li><a href='html/video.html'>비디오 링크</a></li>
+			<li><a href='html/form.html'>비디오 링크</a></li>
+			<li><a href='html/video.html'>양식 만들기</a></li>
+			<li><a href='html/sign_up.html'>회원가입 창으로 이동</a></li>
+			<li><a href='html/ex.input.html'>input 실습</a></li>
+			<li><a href='style/style.index.html'>style 실습</a></li>
+			<li><a href='style/selector.html'>style 선택자</a></li>
+			<li><a href='style/box.html'>박스모델</a></li>
+			<li><a href='ex/ex_01.html'>1번 실습문제</a></li>
+			<li><a href='ex/ex_02.html'>2번 실습문제</a></li>
+
+		</ul>
+	</div>
 
 
-	<form action='../indx.html' method='post'    oninput='ages.value=parseInt(age.value)'>
-	<input type='button' value='닫기' onclick='window.close()'>		
-		<table>
-			<colgroup>
-			<col width='150px'>
-			<col width='250px'>
-			<caption>회원가입 정보</caption>	
-			<tbody>	
-				<tr>
-					<th>아이디</th>
-					<td><input type='text' name='id' placeholder='아이디를 입력해주세요'></td>
-				</tr>
-				<tr>
-					<th>비밀번호</th>
-					<td><input type='password' name='password' placeholder='비밀번호를 입력해주세요'></td>
-				</tr>
-				<tr>
-					<th>비밀번호 확인</th>
-					<td><input type='password' name='password' placeholder='비밀번호를 확인해주세요'></td>
-				</tr>
-				<tr>
-					<th>성함</th>
-					<td><input type='text' name='user_name' placeholder='성함을 입력해주세요'></td>
-				</tr>
-				<tr>
-					<th>나이</th>
-					<td><div><input type='range' list='ages' id='age' name='age' style='width:175px' min='1' max='100' step='1'>
-						<datalist id='ages'>
-							<option value='0'></option>
-							<option value='10'></option>
-							<option value='20'></option>
-							<option value='30'></option>
-							<option value='40'></option>
-							<option value='50'></option>
-							<option value='60'></option>
-							<option value='70'></option>
-							<option value='80'></option>
-							<option value='90'></option>
-							<option value='100'></option>
-						</datalist>
-					<output name='ages' for='age'></output></div>
-					</td>
-				</tr>
-				<tr>
-					<th>생년월일</th>
-					<td><input type='date' name='dates'>
-					</td>
-				</tr>
-				<tr>
-					<th>성별</th>
-					<td><label><input type='radio' name='gender' value='male' checked>남</label> 
-					<label><input type='radio' name='gender' value='female'>여</label></td>
-				</tr>
-				<tr>
-					<th>전화번호</th>
-					<td><select name='number'>
-						<optgroup label="HandPhone"></optgroup>
-							<option>010</option>
-							<option>011</option>
-							<option>012</option>
-							<option>070</option>
-						<optgroup label="LocalNuumber"></optgroup>
-							<option>02</option>
-							<option>032</option>
-							<option>042</option>
-							<option>062</option>
-					</select>
-					<input type='tel' name='phone' style='width:50px'>
-					<input type='tel' name='phone' style='width:50px'>
-					</td>
-				</tr>
-				<tr>
-					<th>이메일</th>
-					<td><input type='email' name='email' style='width:100px'>@
-					<select name='service'>
-						<option selected>직적입력</option>
-						<option value='naver.com'>naver.com</option>
-						<option value='gamil.com'>gmail.com</option>
-						<option value='daum.com'>daum.com</option>
-						
-					</select>
-					</td>
-				</tr>
-				<tr>
-					<th>이메일 수신여부</th>
-					<td><input type='checkbox'  id='sns' name='sns_ss' value='ok' ><label for='sns'>ok</label></td>
-				</tr>
-				<tr>
-					<th>사진등록</th>
-					<td><input type='file' name='filename'></td>
-					<!-- form 태그 내에 file태그를 전송하는 경우
-					1. form태그 전송방식이  post이어야 한다. method='post'
-					2. 파일 데이터전송가능 현대를 지정: enctype='multipart/form-data' -->
-				</tr>
-				<tr>
-				<td colspan='2'><div style='text-align:center'>
-					<input type='submit' value='회원가입'></div></td>
-					
-				</tr>
-			</tbody>
-		</table>	
-				
-	</form>
-	
-		<form action="../index.html" method="get">
-    	<p>색 고르기</p>
-    	<input type="color"  style='width:200px; height:50px' name="mycolor" value="#00ff00">
-	</form>
-		
-		<input type="submit">
-		
-		<hr>
-		
-		<a href='html/ex.input.html'>추가 input 실습</a>
-		<a href='style/style.index.html'>style 실습</a>
-		<a href='style/selector.html'>style 선택자</a>
+
+
+
 </body>
 </html>

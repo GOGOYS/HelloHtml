@@ -19,6 +19,10 @@
 		.eng{
 			font-weight: bold; color: blue; font-size:20px
 		}
+		
+		table tr *{
+			text-decoration: underline; 
+		}
 	</style>
 </head>
 <body>
@@ -61,9 +65,19 @@
 				<td>해당 <span class='eng'>class</span>가 지정된 태그에 적용-중복 ㅇ</td>
 			</tr>
 			<tr>
-				<th></th>
-				<td></td>
-				<td></td>
+				<th>자식 선택자</th>
+				<td>선택자 > 자식선택자</td>
+				<td>선택자 바로 아래 위치한 자신선택자에만 적용가능</td>
+			</tr>
+			<tr>
+				<th>자손 선택자</th>
+				<td>선택자 자손선택자</td>
+				<td>선택자 아래 위치한 모든 자손선택자에 적용(자식도 포함됨)</td>
+			</tr>
+			<tr>
+				<th>속성 선택자</th>
+				<td>선택자[속성=값]</td>
+				<td>속성이</td>
 			</tr>
 		</tbody>
 	</table>
