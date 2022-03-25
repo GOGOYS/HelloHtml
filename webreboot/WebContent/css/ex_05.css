@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+a{display: block}
+h1{display: inline-block; background-color:black; color:white;}
+
+li{list-style-type:none; color: blue}

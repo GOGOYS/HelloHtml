@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>프론트엔드 개발자 지원서</title>
+<style>
+body > div {
+	width: 600px;
+	height: 700px;
+	border: 1px solid #ccc;
+	padding: 20px 40px;
+}
+
+h1:hover {
+	color: red
+}
+
+h1:after {
+	content: "";
+	display: block;
+	width: 372px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 3px;
+}
+
+h4:after {
+	content: "";
+	display: block;
+	width: 66px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 3px;
+}
+
+p {margin-top: -5px;
+	margin-bottom: -3px;
+}
+
+hr{margin-bottom:45px;}
+
+h3 {
+	margin-top: 35px
+}
+
+li {
+	list-style-type: none; line-height: 20px
+}
+
+label.infor{width: 60px; display:inline-block; margin-bottom:5px}
+
+div{background-color: rgba(4, 50, 120, 0.5)}
+
+</style>
+</head>
+<body>
+	<div>
+		<a href='../index.html'>홈으로</a>
+		<form>
+			<h1>프론트엔드 개발자 지원서</h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+
+			<hr>
+
+			<h4>개인정보</h4>
+
+			<ul>
+				<li><label for='r-name' class='infor'>이름</label><input type='text'
+					id='r-name' autofocus placeholder='공백없이 입력하세요'>
+				<li>
+				<li><label for='r-phone' class='infor'>연락처</label><input type='tel'
+					id='r-phone'>
+				<li>
+			</ul>
+
+			<h4>지원분야</h4>
+
+			<ul>
+				<li><input type='radio' name='con' class='con' id='publishing'><label
+					for='publishing'>웹 퍼블리싱</label></li>
+				<li><input type='radio' name='con' class='con'id='app'><label for='app'>웹
+						어플리케이션 개발</label></li>
+				<li><input type='radio' name='con' class='con'id='env'><label for='env'>개발
+						환경 개선</label></li>
+			</ul>
+
+			<h4>지원동기</h4>
+
+			<textarea placeholder='본사 지원동기를 간략히 써 주세요.'
+				rows='10' cols='80'></textarea>
+			<div>
+				<input type='submit' value='접수하기'>
+				<input type='reset' value='다시 쓰기'>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
