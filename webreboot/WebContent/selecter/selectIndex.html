@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+
+table tr {
+	border-bottom: 1px solid #ccc;
+	height: 40px
+}
+
+table tr:first-child {
+	border-top: 1px solid #777;
+}
+
+table th {
+	background-color: #eee;
+	text-align: left;
+}
+
+table tr>* {
+	text-indent: 20px;
+}
+
+talbe tr:last-child{
+	color:red;
+}
+
+table tr:nth-child(2){
+	background-color: blue;
+}
+
+table tr:nth-child(3){
+	background-color: yellow;
+}
+
+div h3 + ul{background-color: red;}
+
+
+</style>
+</head>
+<body>
+	<h3>선택자</h3>
+
+	<table>
+		<colgroup>
+			<col width='300px'>
+			<col width='600px'>
+		</colgroup>
+		<tr>
+			<th>상위요소 하위요소</th>
+			<td>하위요소에 대한 자손요소(자식포함)에 적용</td>
+		</tr>
+		<tr>
+			<th>상위요소 > 하위요소</th>
+			<td>하위요소에 대한 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소 :first-child</th>
+			<td>요소의 부모입장에서 볼때 첫번째 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소 :last-child</th>
+			<td>요소의 부모입장에서 볼때 마지막 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소 :nth-child()</th>
+			<td>요소의 부모입장에서 볼때 n()번째 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소: nth-last-child()</th>
+			<td>요소의 부모입장에서 볼때 뒤에서 부터 n()번째 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소: nth-child(2n)</th>
+			<td>짝수번째 자식요소에 적용</td>
+		</tr>
+		<tr>
+			<th>요소1 + 요소2</th>
+			<td>요소1 이후에 나오는 첫번째 형제인 요소2에 대해 적용</td>
+		</tr>
+	</table>
+	
+	<div>
+		<h3>요소의 속성 선택자</h3>
+		<ul>
+			<li><a title='이동' href='http://www.naver.com'>네이버</a></li>
+			<li><a title='이동' href='http://www.google.com'>구글</a></li>
+			<li><a title='노노'>다음</a></li>
+		</ul>
+
+		<ul>
+			<li>성명: <input type='text' name='user name'></li>
+			<li>아이디: <input type='text' name='user_id'></li>
+			<li>비밀번호: <input type='password' name='user_pw'></li>
+		</ul>
+	</div>
+
+</body>
+</html>

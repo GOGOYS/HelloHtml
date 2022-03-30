@@ -4,38 +4,146 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-	#container{width:1200px; margin:0 auto;}
+#container, footer div, table {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav ul li {
+	float: left;
+	list-style: none;
+	font-size: 2em;
+	padding: 40px 20px;
+}
+
+#head1 {
+	clear: both;
+	border-top: 1px solid;
+}
+
+#head1 ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	list-style: none;
+	font-size: 1.5em;
+	width: 50%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+#head1 ul li:nth-child(2) {
+	border: 1px solid #ccc;
+	border-left: none;
+	margin-right: -4px;
+}
+
+#head1 ul li:nth-child(1) {
+	border: 2px solid #5895ad;
+	border-bottom: none;
+	margin-left: -4px;
+}
+
+ul {
+	margin: 0;
+	padding: 40px 0 60px 0;
+}
+
+h2 {
+	clear: both;
+	margin-top: 80px;
+	color: #5895ad;
+	margin-bottom: -30px;
+}
+
+section {
+	clear: both;
+}
+
+h3 {
+	color: #5895ad;
+}
+
+article {
+	margin: 80px 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 20px;
+}
+
+#borderNo {
+	border-right: none
+}
+
+thead {
+	background-color: #ddd;
+}
+
+thead tr th {
+	border-width: 3px 1px;
+	border-color: #aaa
+}
+
+th {
+	border-right: 1px solid #ccc;
+}
+
+footer {
+	font-size: 0.6em;
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid black;
+	padding: 20px 0;
+}
+
+footer span {
+	color: red;
+}
+
+#head1 div h1 {
+	text-align: center;
+	margin-top: 70px
+}
+
+#head1 div p {
+	text-align: center;
+}
+
+table#ncstable tfoot tr {
+	border-bottom: 1px solid #ccc;
+}
+
+table#ncstable tfoot th {
+	background-color: #eee;
+}
+
+table#ncstable tr>*{
+	border-right: none;
+}
+
+
+table#ncstable tr td{
+	text-align: left;
+}
+
+table#ncstable tr td:not(:first-child){
+	text-align: center;
+}
+table#ncstable tr td:first-child{
+	text-indent: 20px;
+}
 	
-	
-	#nav ul li{float:left; list-style:none; font-size:2em; padding: 40px 20px; }
-	
-	#head1{clear:both; border-top: 1px solid;}
-	
-	#head1 ul li{float:left; list-style:none; font-size:1.5em; padding: 10px 180px; margin:80px 0;}
-	#head1 ul li:nth-child(2){border: 1px solid #ccc; border-left: none;}
-	#head1 ul li:nth-child(1){border: 1px solid #5895ad; border-bottom: none; margin-left:105px}
-	ul{position: realative; left:400px}
-	
-	h2{clear:both; margin-top:80px; color:#5895ad;margin-bottom:-30px;}
-	
-	section{clear:both;}
-	
-	
-	h3{color: #5895ad; }
-	
-	article{margin: 80px 0;}
-	
-	table{border-collapse:collapse;}
-	th, td{border-bottom:1px solid #ccc; padding:10px 20px;}
-	#borderNo{border-right:none}
-	
-	thead{background-color:#ddd;}
-	thead tr th{border-width: 3px 1px; border-color: #aaa}
-	th{border-right:1px solid #ccc;}
-	
-	footer{font-size:0.6em; background-color: #bbb; height:40px; line-height:40px; 
-	text-align:center;}
-	
+
+/* 제외의 가상 클래스 :not()  */
+
+/* text-indent:20px; 들여쓰기*/
+
 </style>
 </head>
 <body>
@@ -51,6 +159,10 @@
 			</nav>
 		</header>
 		<header id='head1'>
+			<div>
+				<h1>NCS분류체계</h1>
+				<p>NCS(국가직무능력표준)에 대한 정보를 자세히 확인하실 수 있습니다.</p>
+			</div>
 			<ul>
 				<li>NCS 소개</li>
 				<li>분류 체계</li>
@@ -75,9 +187,9 @@
 			<article>
 				<h3>세부 분류 기준</h3>
 				<table>
-				<colgroup>
-					<col width='250px'>
-					<col width='950px'>
+					<colgroup>
+						<col width='250px'>
+						<col width='950px'>
 					<thead>
 						<tr>
 							<th>분류</th>
@@ -91,28 +203,81 @@
 						</tr>
 						<tr>
 							<th>중분류</th>
-							<td>대분류 내에서 직능유형이 유사한 분야<br>
-								대분류 내에서 산업이 유사한 분야<br>
-								대분류 내에서 노동시장이 독립적으로 형성되거나 경력개발경로가 유사한 분야<br>
-								중분류 수준에서 산업별 인적자원개발협의체(SC)가 존재하는 분야</td>
+							<td>대분류 내에서 직능유형이 유사한 분야<br> 대분류 내에서 산업이 유사한 분야<br>
+								대분류 내에서 노동시장이 독립적으로 형성되거나 경력개발경로가 유사한 분야<br> 중분류 수준에서 산업별
+								인적자원개발협의체(SC)가 존재하는 분야
+							</td>
 						</tr>
 						<tr>
 							<th>소분류</th>
-							<td>중분류 내에서 직능유형이 유사한 분야<br>
-								소분류 수준에서 산업별인적자원개발협의체(SC)가 존재하는 분야</td>
+							<td>중분류 내에서 직능유형이 유사한 분야<br> 소분류 수준에서 산업별인적자원개발협의체(SC)가
+								존재하는 분야
+							</td>
 						</tr>
 						<tr>
 							<th>세분류</th>
-							<td>소분류 내에서 직능유형이 유사한 분야<br>
-								한국고용직업분류의 직업 중 대표 직무</td>
+							<td>소분류 내에서 직능유형이 유사한 분야<br> 한국고용직업분류의 직업 중 대표 직무
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</article>
+			<article>
+				<h3>NCS 분류 체계</h3>
+				<table id='ncstable'>
+					<colgroup>
+						<col>
+						<col width='250px'>
+						<col width='250px'>
+						<col width='250px'>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>대분류</th>
+							<th>중분류</th>
+							<th>소분류</th>
+							<th>세분류</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01. 사업관리</td>
+							<td>1</td>
+							<td>2</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>02. 경영회계</td>
+							<td>1</td>
+							<td>2</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>03. 금융보험</td>
+							<td>1</td>
+							<td>2</td>
+							<td>5</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>계</th>
+							<td>82</td>
+							<td>267</td>
+							<td>1049</td>
+						</tr>
+					</tfoot>
+				</table>
+			</article>
 		</section>
 		<footer>
-			<p>(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) HRD-Net 시스템관련문의 : 1577-7114(유료), 제도/자격문의 : 고용노동부1350(유료)
-Copyright ⓒ 2016. Human Resources Development Service Of Korea. All Rights Reserved.</p>
+			<div>
+				<p>
+					(27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원) <span>HRD-Net
+						시스템관련문의</span> : 1577-7114(유료), 제도/자격문의 : 고용노동부1350(유료) Copyright ⓒ 2016.
+					Human Resources Development Service Of Korea. All Rights Reserved.
+				</p>
+			</div>
 		</footer>
 	</div>
 
