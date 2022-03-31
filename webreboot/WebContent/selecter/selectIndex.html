@@ -26,24 +26,27 @@ table tr>* {
 	text-indent: 20px;
 }
 
-talbe tr:last-child{
-	color:red;
+talbe tr:last-child {
+	color: red;
 }
 
-table tr:nth-child(2){
+table tr:nth-child(2) {
 	background-color: blue;
 }
 
-table tr:nth-child(3){
+table tr:nth-child(3) {
 	background-color: yellow;
 }
 
-div h3 + ul{background-color: red;}
-
-
+div h3+ul {
+	background-color: red;
+}
 </style>
 </head>
+
+
 <body>
+	<a href='../index.html'>홈 가기</a>
 	<h3>선택자</h3>
 
 	<table>
@@ -83,8 +86,15 @@ div h3 + ul{background-color: red;}
 			<th>요소1 + 요소2</th>
 			<td>요소1 이후에 나오는 첫번째 형제인 요소2에 대해 적용</td>
 		</tr>
+		<tr>
+			<th>요소1 ~ 요소2</th>
+			<td>요소1 이후에 나오는 모든 요소2에 대해 적용</td>
+		</tr>
 	</table>
 	
+	<!-- nth번째 를 찾을때 부모입장에서의 n번째를 찾기때문에 그 태그가 몇개이든 상관없이
+	부모를 기준으로 2번째이고, 태그명이 같다면 적용이 된다. <br> 태그로 순서로 적용됨 -->
+
 	<div>
 		<h3>요소의 속성 선택자</h3>
 		<ul>

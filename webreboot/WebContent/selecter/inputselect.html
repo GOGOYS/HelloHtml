@@ -3,16 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+input[type=text], input[type = password] {
+	height: 25px;
+}
+input[type = checkbox]{width: 20px; height: 20px; vertical-align: middle;}
+/* vertical-align: middle : 세로 정렬 */
+input[type = radio]{margin: 10px 3px 10px 10px;}
+
+input:enabled{background-color: red;}
+input:disabled{color:red;}
+input:focus{background-color:yellow;}
+/*  radio와 checkbox 각각 checked를 지정할려면 */
+input[type=radio]:checked + label{ color: green;}
+input[type=checkbox]:checked + label{ color: blue;}
+ul li:hover{background-color: yellow;}
+ul li:active{background-color: green;}
+
+</style>
 </head>
 <body>
+<!-- 
+동작이나 상태와 관련된 가상 클래스
+선택자 :enabled 활성화된 선택자(입력 또는 선택이 가능한) 기본설정
+선택자 :disabled 비활성화된 선택자(입력 또는 선택이 불가능한)
+선택자 :checked 체크박스나 라디오버튼에서 체크된 선택자
+선택자 :focus 커서를 갖는 선택자
+선택자 :hover 마우스를 올렸을때 선택된 선택자
+선택자 :active 클릭했을때 선택된 선택자
+ -->
+	<a href='../index.html'>홈 가기</a>
 	<h3>입력양식 선택자</h3>
 	<ul>
-		<li>성명: <input type='text' name='user_name' value='홍길동'></li>
-		<li>아이디: <input type='text' name='user_id'></li>
+		<li>성명: <input type='text' name='user_name' disabled value='홍길동'></li>
+		<li>아이디: <input type='text' name='user_id' ></li>
 		<li>비밀번호:<input type='password' name='user_npasswd'></li>
-		<li>성별:<input type='radio' name='gender' value='남' id='mail'><label for='mail'>남</label>
-		<input type='radio' name='gender' value='여' id='femail'><label for='femail'>여</label></li>
-		<li>취미:<input type='checkbox' name='hobby' value='취미'></li>
+		<li>성별:<input type='radio' name='gender' value='남' id='mail' checked><label
+			for='mail'>남</label> <input type='radio' name='gender' value='여'
+			id='femail'><label for='femail'>여</label></li>
+		<li>취미:<input type='checkbox' name='hobby' id='hobby' value='독서'><label
+			for='hobby'>독서</label> <input type='checkbox' name='hobby'
+			id='hobby1' value='웹툰보기'><label for='hobby1'>웹툰보기</label> <input
+			type='checkbox' name='hobby' id='hobby2' value='게임'><label
+			for='hobby2'>게임</label> <input type='checkbox' name='hobby'
+			id='hobby3' value='운동'><label for='hobby3'>운동</label> <input
+			type='checkbox' name='hobby' id='hobby4' value='자기계발'><label
+			for='hobby4'>자기계발</label></li>
 	</ul>
 
 </body>
