@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{margin:0;}
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 50px;
+}
+
+.box1 {
+	background-color: red
+}
+
+.box2 {
+	background-color: blue
+}
+
+.box:hover {
+	transform: rotate(30deg);
+	transform-origin: right top;
+}
+/* transform-origin:회전의 기준지정  transform: rotate(30deg) deg가 각도*/
+.box:active {
+	transform: translate(300px, 0px);
+} /*  x축 y축 이동거리 지정*/
+
+.box3{width:100px; height: 100px; background-color:green; position: fixed; left:50%; top:50%;
+/* 위치를 이동시키면 화면의 중심이 왼쪽상단 모서리로 고정되어 있어서 transform으로 이동시켜야함 */
+ transform: translate(-50%, -50%)} /* %는 박스의 중심이 박스 사이즈의 %만큼 이동 */
+</style>
+</head>
+<body>
+<a href='../index.html'>홈 가기</a>
+	<H3>변형 (transform)</H3>
+	<P>텍스트나 이미지 등을 움직이게 하기 위해 transform을 적용한다.
+	<div class='box box1'></div>
+	<div class='box box2'></div>
+	<div class='box3'></div>
+
+</body>
+</html>
