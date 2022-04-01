@@ -31,6 +31,10 @@ body{margin:0;}
 .box3{width:100px; height: 100px; background-color:green; position: fixed; left:50%; top:50%;
 /* 위치를 이동시키면 화면의 중심이 왼쪽상단 모서리로 고정되어 있어서 transform으로 이동시켜야함 */
  transform: translate(-50%, -50%)} /* %는 박스의 중심이 박스 사이즈의 %만큼 이동 */
+ 
+ #out{ width: 600px; height:600px; border: 1px solid; position: relative; margin: 50px;}
+ 
+ #in{width:100px; height:100px; background-color: orange; position:absolute; top:50%; left: 50%; transform:translate(-50%, -50%)}
 </style>
 </head>
 <body>
@@ -40,6 +44,12 @@ body{margin:0;}
 	<div class='box box1'></div>
 	<div class='box box2'></div>
 	<div class='box3'></div>
+	
+	<div id= "out">
+		<div id ='in'>
+			
+		</div>
+	</div>
 
 </body>
 </html>
