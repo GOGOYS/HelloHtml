@@ -45,10 +45,11 @@
 	margin-left: -4px;
 }
 
-ul {
+#head1 ul {
 	margin: 0;
 	padding: 40px 0 60px 0;
 }
+
 
 h2 {
 	clear: both;
@@ -140,6 +141,18 @@ table#ncstable tr td:first-child{
 	text-indent: 20px;
 }
 	
+.submenu{position:absolute; left:0; top:100px; width: 100%; background-color: #ccc; border-bottom: 1px solid #aaa; transform: scaleY(0);
+	transform-origin: top;
+	transition: 0.3s;}
+
+.submenu ul{float:left;}
+.submenu ul li{font-size: 15px !important; float:none !important;}
+
+.menu:hover+.submenu{transform: scaleY(1);}
+
+
+
+
 
 /* 제외의 가상 클래스 :not()  */
 
@@ -153,10 +166,76 @@ table#ncstable tr td:first-child{
 		<header id='nav'>
 			<nav>
 				<ul>
-					<li><a>훈련과정</a></li>
-					<li><a>지원제도</a></li>
-					<li><a>일자리정보</a></li>
-					<li><a>지식정보센터</a></li>
+					<li><a class='menu'>훈련과정</a>
+						<div class='submenu'>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+							<ul>
+								<li>기업 훈련과정</li>
+								<li>일학습 병행과정</li>
+								<li>정부부처벌 훈련과정</li>
+							</ul>
+							<ul>
+								<li>유관기관 훈련과정</li>
+								<li>STEP 이러닝</li>
+							</ul>
+						</div>
+					</li>
+					<li><a class='menu'>지원제도</a>
+						<div class='submenu'>
+							<ul>
+								<li>정부지원 사업안내</li>
+								<li>범 부처 신기술 훈련사업</li>
+								<li>정부부처별 지원사업안내</li>
+							</ul>
+							<ul>
+								<li>법령/서식 규정</li>
+								<li>법령정보</li>
+								<li>업무서식 및 규정</li>
+							</ul>
+						</div>
+					</li>
+					<li><a class='menu'>일자리정보</a>
+						<div class='submenu'>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+						</div>
+					</li>
+					<li><a class='menu'>지식정보센터</a>
+						<div class='submenu'>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+							<ul>
+								<li>국민내일 배움카드 훈련과정</li>
+								<li>K-디지털 트레이닝</li>
+								<li>k-디지털 기초역량 훈련</li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</nav>
 		</header>
