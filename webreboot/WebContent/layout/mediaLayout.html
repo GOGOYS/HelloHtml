@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale='>
+<title>Insert title here</title>
+</head>
+<style>
+	 body{margin:0 auto;}
+	 ul {margin:0; padding:0; list-style:0;}
+	 header{margin: 0 auto; padding: 0 50px;border-bottom: 1px solid #ccc;}
+	 section{ margin: 0 auto; padding: 0 50px;}
+	 header ul {display:iline-block; list-style:none; margin: 30px 0 20px;}
+	 header li{float:left; padding-bottom: 10px;}
+	 header li:not(:last-child){margin-right:50px;}
+	 header li.on {border-bottom: 3px solid red; color:red}
+	 #tb-list table{border-collapse: collapse; width: 100%; text-align: center;}
+	 
+	 #tb-list table thead tr{background-color: #ccc; border-top:3px solid #666;}
+	 
+	 #tb-list td, #tb-list th{padding: 15px 15px;}
+	 #tb-list tbody tr{border-top: 1px solid #aaa;}
+	 #tb-list tbody tr:last-child {border-bottom: 1px solid #aaa;}
+	 #tb-list tbody tr td:nth-child(2){text-align:left;}
+	 #tb-list tbody tr td:nth-child:hover{text-decoration: underline; color: blue; cursor:pointer;}
+	 
+	 
+	 
+	 @media screen and (max-width:1023px){
+	 	header{padding: 0 20px;}
+	 }
+	 @media screen and (min-width:414px) and (max-width:1023px){
+	 	article table{width:950px;}
+	 }
+	 @media screen and (max-width:767px){
+	 	header ul li{width:100%}
+	 }
+	 
+	 @media screen and (max-width:413px){
+	  article#tb-list table colgroup, article#tb-list table thead, article table tbody td:first-child{
+	  display: none;}
+	  
+	  article table tbody tr:first-child{border-top: 2px solid #666;}
+	  article#tb-list table tbody td{display:block; text-align:left; padding:5px 0 0 0;}
+	  article#tb-list table tbody td:last-child{padding-bottom: 5px;}
+	 } 
+	 
+
+	 
+</style>
+<body>
+<!-- <p>미디어쿼리: 디바이스 크기에 맞춰 스타일을 각각 지정해서 화면을 다르게 표현하는 방식
+연산자 OR, AND - media screen and print 
+				media screen and (min-width:768px;)</p> -->
+				
+	<header>
+		<nav>	
+		<ul>
+			<li>데이터찾기</li>
+			<li>국가데이터맵</li>
+			<li>데이터활용</li>
+			<li class='on'>정보공유</li>
+		</ul>
+		</nav>
+	</header>
+	<section>
+		<article id='tb-list'>
+			<h3>정보공유</h3>
+			<table>
+			<colgroup>
+				<col width='70px'>
+				<col>
+				<col width='100px'>
+				<col width='70px'>
+				<col width='70px'>
+				<col width='120px'>
+			</colgroup>
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>제목</th>
+						<th>등록자</th>
+						<th>조회수</th>
+						<th>종아요</th>
+						<th>등록일</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>100</td>
+						<td>펄어비스 주가 급등 무슨일?</td>
+						<td>홍길동</td>
+						<td>101</td>
+						<td>7</td>
+						<td>20202-04-27</td>
+					</tr>
+					<tr>
+						<td>101</td>
+						<td>펄어비스 주가 하락 무슨일?</td>
+						<td>홍길동</td>
+						<td>1010</td>
+						<td>74</td>
+						<td>20202-04-28</td>
+					</tr>
+					<tr>
+						<td>102</td>
+						<td>펄어비스 주가 급등 무슨일?</td>
+						<td>홍길동</td>
+						<td>104</td>
+						<td>41</td>
+						<td>20202-04-29</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>펄어비스 주가 하락 무슨일?</td>
+						<td>전우치</td>
+						<td>11</td>
+						<td>2</td>
+						<td>20202-04-30</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+
+</body>
+</html>
